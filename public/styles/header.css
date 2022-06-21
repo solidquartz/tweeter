@@ -1,0 +1,13 @@
+header {
+  display: flex;
+  background-image:
+    url("public/images/clean-textile.png");
+  background-color: rgb(195, 243, 243);
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+strong {
+  font-weight: 600;
+}

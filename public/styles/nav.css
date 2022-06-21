@@ -1,6 +1,6 @@
 h1 {
   color: #FFFFFF;
-  font-size: x-large;
+  font-size: xx-large;
 }
 
 .write {
@@ -31,7 +31,8 @@ nav {
   align-items: center;
   flex-direction: column;
   margin-right: 1.5em;
-  margin-left: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 i {
