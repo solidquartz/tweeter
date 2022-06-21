@@ -3,8 +3,9 @@ h1 {
   font-size: x-large;
 }
 
-h2 {
-  font-family: 'Source Sans Pro';
+.write {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
   color: #FFFFFF;
   font-size: large;
 }
@@ -20,7 +21,6 @@ nav {
 .header {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   margin-right: 1.5em;
   margin-left: 1.5em;
 
@@ -32,4 +32,13 @@ nav {
   flex-direction: column;
   margin-right: 1.5em;
   margin-left: 1.5em;
+}
+
+i {
+  color: crimson;
+  font-size: medium;
+}
+
+strong {
+  font-weight: 600;
 }
