@@ -1,3 +1,14 @@
+h1 {
+  color: #FFFFFF;
+  font-size: x-large;
+}
+
+h2 {
+  font-family: 'Source Sans Pro';
+  color: #FFFFFF;
+  font-size: large;
+}
+
 nav {
   display: flex;
   height: 120px;
@@ -6,20 +17,19 @@ nav {
   justify-content: space-between;
 }
 
-h1 {
+.header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   margin-right: 1.5em;
   margin-left: 1.5em;
-  color: #FFFFFF;
-  font-size: xx-large;
+
 }
 
-div {
+.right-nav {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  flex-direction: column;
   margin-right: 1.5em;
   margin-left: 1.5em;
 }
