@@ -34,3 +34,27 @@ body {
   flex-direction: column;
   margin: auto;
 }
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+#submit-counter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.counter {
+  font-family: "Bungee", sans-serif;
+}
+
+button {
+  font-family: "Bungee", sans-serif;
+  color: white;
+  background-color: #4056A1;
+}
