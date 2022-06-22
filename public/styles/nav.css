@@ -1,13 +1,13 @@
 h1 {
   color: #FFFFFF;
-  font-size: 2rem;
+  font-size: 1.5em;
 }
 
 .write {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
   color: #FFFFFF;
-  font-size: 1.1rem;
+  font-size: .8em;
 }
 
 nav {
@@ -37,7 +37,7 @@ nav {
 
 i {
   color: crimson;
-  font-size: medium;
+  font-size: .7em;
 }
 
 strong {
