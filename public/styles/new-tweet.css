@@ -1,0 +1,36 @@
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+}
+
+textarea {
+  border: none;
+  border-bottom: 5px solid #545149;
+  background-color: #f4f1ec;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  margin: 8px auto;
+  width: 100%;
+}
+
+#submit-counter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 8px auto;
+}
+
+.counter {
+  font-family: "Bungee", sans-serif;
+}
+
+button {
+  font-family: "Bungee", sans-serif;
+  color: white;
+  background-color: #4056A1;
+}
