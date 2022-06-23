@@ -33,10 +33,33 @@ body {
   display: flex;
   width: 90%;
   align-content: center;
-  justify-content: center;
+  justify-content: baseline;
   flex-direction: column;
   margin: auto;
   border: #545149 solid 5px;
   padding: .5em;
 }
 
+.tweet-header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-content: center;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.profile-name {
+  font-weight: 300;
+  padding: .3em;
+}
+
+.username {
+  display: flex;
+  align-items: center;
+  color: silver;
+  font-size: 1em;
+}
