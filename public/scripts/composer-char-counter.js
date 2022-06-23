@@ -9,6 +9,10 @@ $(document).ready(function() {
 
     let $charCounter = $(this).parent().find('output').text($charsRemaining);
 
+    if ($charsRemaining < 0) {
+      $($charCounter).addClass("invalid");
+}
+
 
     //addClass "invalid" when over max characters
     //invalid will be css coded red
