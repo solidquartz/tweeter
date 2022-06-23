@@ -63,3 +63,24 @@ body {
   color: silver;
   font-size: 1em;
 }
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: baseline;
+  border-top: #545149 5px solid;
+  margin: auto;
+  padding: .2em;
+}
+
+i {
+  font-size: .7em;
+  padding: .3em;
+  color: #4056A1;
+  margin: auto;
+}
+
+.date-posted {
+  font-size: .7em;
+}
