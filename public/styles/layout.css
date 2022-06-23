@@ -38,6 +38,12 @@ body {
   margin: auto;
   border: #545149 solid 5px;
   padding: .5em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.tweet:hover {
+  box-shadow: 5px 5px skyblue;
 }
 
 .tweet-header {
@@ -79,6 +85,10 @@ i {
   padding: .3em;
   color: #4056A1;
   margin: auto;
+}
+
+i:hover {
+  color: goldenrod;
 }
 
 .date-posted {
