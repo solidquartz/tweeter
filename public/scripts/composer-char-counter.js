@@ -3,12 +3,11 @@ $(document).ready(function() {
   $('#tweet-text').on('input', function() {
 
     let $tweetLength = $(this).val().length;
-    console.log($tweetLength);
     const maxChars = 140;
 
-    let charsRemaining = (maxChars - $tweetLength);
-    console.log(charsRemaining);
+    let $charsRemaining = (maxChars - $tweetLength);
 
+    let $charCounter = $(this).parent().find('output').text($charsRemaining);
 
 
     //addClass "invalid" when over max characters
