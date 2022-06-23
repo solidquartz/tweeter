@@ -13,6 +13,10 @@ $(document).ready(function() {
       $($charCounter).addClass("invalid");
     }
 
+    if ($charsRemaining > 0) {
+      $($charCounter).removeClass("invalid");
+    }
+
   });
 
 });
