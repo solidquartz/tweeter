@@ -31,18 +31,28 @@ body {
  */
 #tweets-container {
   display: flex;
-  width: 90%;
   align-content: center;
   justify-content: baseline;
   flex-direction: column;
   margin: auto;
-  border: #545149 solid 5px;
-  padding: .5em;
   margin-bottom: 1em;
   margin-top: 1em;
 }
 
-.tweet:hover {
+.tweet-section {
+    display: flex;
+      width: 90%;
+      align-content: center;
+      justify-content: baseline;
+      flex-direction: column;
+      margin: auto;
+      border: #545149 solid 5px;
+      padding: .5em;
+      margin-bottom: 1em;
+      margin-top: 1em;
+    }
+
+.tweet-section:hover {
   box-shadow: 5px 5px skyblue;
 }
 
