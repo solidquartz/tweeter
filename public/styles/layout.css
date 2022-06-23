@@ -29,6 +29,14 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-
-
+.tweet {
+  display: flex;
+  width: 90%;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  border: #545149 solid 5px;
+  padding: .5em;
+}
 
