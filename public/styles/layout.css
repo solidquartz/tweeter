@@ -29,7 +29,7 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-.tweet {
+#tweets-container {
   display: flex;
   width: 90%;
   align-content: center;
@@ -76,7 +76,7 @@ footer {
   justify-content: space-between;
   align-content: baseline;
   border-top: #545149 5px solid;
-  margin: auto;
+  margin-top: .7em;
   padding: .2em;
 }
 
