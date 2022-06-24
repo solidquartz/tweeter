@@ -24,17 +24,17 @@ $(document).ready(function() {
         </article>
         <footer>
           <p class="date-posted">
-            ${tweetData.created_at}
+           ${timeago.format(tweetData.created_at)}
           </p>
-          <div>
-            <i class="fa-solid fa-flag"></i>
-            <i class="fa-solid fa-retweet"></i>
-            <i class="fa-solid fa-heart"></i>
-          </div>
+    <div>
+      <i class="fa-solid fa-flag"></i>
+      <i class="fa-solid fa-retweet"></i>
+      <i class="fa-solid fa-heart"></i>
+    </div>
 
         </footer>
         </article>
-     `);
+    `);
 
     return $tweet;
   };
@@ -69,7 +69,7 @@ $(document).ready(function() {
   ////////////// Tweet Fetching //////////////
   ///////////////////////////////////////////
 
-  const loadTweets = function () {
+  const loadTweets = function() {
     $.ajax("/tweets", { method: "GET" })
       .then(function(data) {
         renderTweets(data);
@@ -78,4 +78,4 @@ $(document).ready(function() {
   loadTweets();
 
 });
-
+;
