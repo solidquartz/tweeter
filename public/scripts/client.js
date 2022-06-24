@@ -45,7 +45,7 @@ $(document).ready(function() {
 
     for (const tweetData of data) {
       const $tweet = $(createTweetElement(tweetData));
-      $('#tweets-container').append($tweet);
+      $('#tweets-container').prepend($tweet);
     }
   };
 
@@ -56,26 +56,27 @@ $(document).ready(function() {
 
   $("form").on("submit", function(event) {
     event.preventDefault();
-
     const $data = $(this).serialize();
 
     if ($("#tweet-text").val().length === 0) {
       alert("Speak up! Please enter some text into your tweet 🐦");
       return;
     }
-
     if ($("#tweet-text").val().length > 140) {
       alert("tl;dr please use fewer than 140 characters 🐦");
       return;
     }
 
-
-
     $.ajax({
       method: "POST",
       url: "/tweets",
       data: $data
-    });
+    })
+      .then(function() {
+        $("#tweets-container").empty();
+        loadTweets();
+      });
+
   });
 
 
@@ -89,7 +90,10 @@ $(document).ready(function() {
         renderTweets(data);
       });
   };
+
   loadTweets();
 
+
 });
-;
+
+
