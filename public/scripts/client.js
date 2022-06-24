@@ -56,7 +56,21 @@ $(document).ready(function() {
 
   $("form").on("submit", function(event) {
     event.preventDefault();
+
     const $data = $(this).serialize();
+
+    if ($("#tweet-text").val().length === 0) {
+      alert("Speak up! Please enter some text into your tweet 🐦");
+      return;
+    }
+
+    if ($("#tweet-text").val().length > 140) {
+      alert("tl;dr please use fewer than 140 characters 🐦");
+      return;
+    }
+
+
+
     $.ajax({
       method: "POST",
       url: "/tweets",
