@@ -1,21 +1,4 @@
-const { data } = require("jquery");
-
 $(document).ready(function() {
-
-  /////////////////////////////////////////////
-  ///////////// Tweet Submission /////////////
-  ///////////////////////////////////////////
-
-  $("form").on("submit", function(event) {
-    event.preventDefault();
-    const $data = $(this).serialize();
-    $.ajax({
-      method: "POST",
-      url: "/tweets",
-      data: $data
-    });
-  });
-
 
   /////////////////////////////////////////////
   ////////////// Tweet Rendering /////////////
@@ -68,17 +51,31 @@ $(document).ready(function() {
 
 
   /////////////////////////////////////////////
+  ///////////// Tweet Submission /////////////
+  ///////////////////////////////////////////
+
+  $("form").on("submit", function(event) {
+    event.preventDefault();
+    const $data = $(this).serialize();
+    $.ajax({
+      method: "POST",
+      url: "/tweets",
+      data: $data
+    });
+  });
+
+
+  /////////////////////////////////////////////
   ////////////// Tweet Fetching //////////////
   ///////////////////////////////////////////
 
-  const loadTweets = () => {
+  const loadTweets = function () {
     $.ajax("/tweets", { method: "GET" })
-      .done(function(data) {
+      .then(function(data) {
         renderTweets(data);
       });
   };
-  const loaded = loadTweets(data);
-  console.log(loaded);
+  loadTweets();
 
 });
 
