@@ -66,12 +66,24 @@ $(document).ready(function() {
     const $data = $(this).serialize();
 
     if ($("#tweet-text").val().length === 0) {
-      alert("Speak up! Please enter some text into your tweet 🐦");
+
+      const $emptyError = $(`
+  <p class="warning">Speak up! Please enter some text into your tweet 🐦</p>`);
+      $("figure").append($emptyError);
+      $("figure").slideDown;
+      $("figure").attr("hidden", false);
       return;
+
     }
     if ($("#tweet-text").val().length > 140) {
-      alert("tl;dr please use fewer than 140 characters 🐦");
+
+      const $longError = $(`
+  <p class="warning">tl;dr please use fewer than 140 characters 🐦</p>`);
+      $("figure").append($longError);
+      $("figure").slideDown;
+      $("figure").attr("hidden", false);
       return;
+
     }
 
     $.ajax({
