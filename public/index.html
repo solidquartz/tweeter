@@ -59,6 +59,8 @@
     </div>
   </nav>
 
+<!-- Profile -->
+
   <header class="profile-header">
     <div>
       <img src="/images/profile-hex.png">
@@ -72,11 +74,19 @@
     </div>
   </header>
 
-  <!-- Page-specific (main) content here -->
+  <!-- Main Content -->
   <main class="container">
 
-    <!-- Compose Tweet -->
+    <!-- Compose Section-->
     <section class="new-tweet">
+
+      <!--Error Messages -->
+<figure hidden>
+  <figcaption>Error!</figcaption>
+  <p class="warning">Error message here</p>
+</figure>
+
+      <!-- Compose Tweet -->
       <h2 class="centered-text">Compose Tweet</h2>
       <form method="POST" action="/tweets/">
         <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>

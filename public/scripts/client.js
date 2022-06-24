@@ -4,23 +4,30 @@ $(document).ready(function() {
   ////////////// Tweet Rendering /////////////
   ///////////////////////////////////////////
 
+  //protects against cross-site scripting
+  const escape = function(str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
   //(callback) takes a tweet object and returns a tweet <article> element containing the entire html structure of the tweet
   const createTweetElement = function(tweetData) {
 
     let $tweet = $(`<article class="tweet-section">
         <header class="tweet-header">
           <div class="user-info">
-            <img src="${tweetData.user.avatars}" width="64px" height="64px" class="profile-pic">
+            <img src="${escape(tweetData.user.avatars)}" width="64px" height="64px" class="profile-pic">
             <h3 class="profile-name">
-              ${tweetData.user.name}
+              ${escape(tweetData.user.name)}
             </h3>
           </div>
           <h3 class="username">
-            ${tweetData.user.handle}
+            ${escape(tweetData.user.handle)}
           </h3>
         </header>
         <article class="tweet">
-          ${tweetData.content.text}
+          ${escape(tweetData.content.text)}
         </article>
         <footer>
           <p class="date-posted">
