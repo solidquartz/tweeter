@@ -1,5 +1,24 @@
 $(document).ready(function() {
 
+  /////////////////////////////////////////////
+  ///////////// Tweet Submission /////////////
+  ///////////////////////////////////////////
+
+  $("form").on("submit", function(event) {
+    event.preventDefault();
+    const $data = $(this).serialize();
+    $.ajax({
+      method: "POST",
+      url: "/tweets",
+      data: $data
+    });
+  });
+
+
+  /////////////////////////////////////////////
+  ////////////// Tweet Rendering /////////////
+  ///////////////////////////////////////////
+
   //takes a tweet object and returns a tweet <article> element containing the entire html structure of the tweet
   const createTweetElement = function(tweetData) {
 
