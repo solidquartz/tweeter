@@ -46,3 +46,10 @@ nav {
 strong {
   font-weight: 600;
 }
+
+figure {
+  border: 2px solid red;
+  margin: .7em;
+  text-align: center;
+  font-size: 1.1em;
+}
