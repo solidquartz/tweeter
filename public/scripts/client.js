@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  $("figure").hide();
+
   /////////////////////////////////////////////
   ////////////// Tweet Rendering /////////////
   ///////////////////////////////////////////
@@ -50,6 +52,8 @@ $(document).ready(function() {
   //takes in an array of objects and appends each one to the #tweets-container.
   const renderTweets = function(data) {
 
+    $("#tweets-container").empty();
+
     for (const tweetData of data) {
       const $tweet = $(createTweetElement(tweetData));
       $('#tweets-container').prepend($tweet);
@@ -63,39 +67,58 @@ $(document).ready(function() {
 
   $("form").on("submit", function(event) {
     event.preventDefault();
+
     const $data = $(this).serialize();
 
     if ($("#tweet-text").val().length === 0) {
 
       const $emptyError = $(`
-  <p class="warning">Speak up! Please enter some text into your tweet 🐦</p>`);
+        <p class="warning">
+          Speak up! Please enter some text into your tweet 🐦
+        </p>`
+      );
+
       $("figure").append($emptyError);
-      $("figure").slideDown;
-      $("figure").attr("hidden", false);
+      $("figure").slideDown();
       return;
 
+    } else {
+      $("figure").slideUp();
+      $("figure").empty();
     }
-    if ($("#tweet-text").val().length > 140) {
+
+
+    if ($("#tweet-text").val().length > 140 && $("#tweet-text")) {
 
       const $longError = $(`
-  <p class="warning">tl;dr please use fewer than 140 characters 🐦</p>`);
+        <p class="warning">
+          tl;dr please use fewer than 140 characters 🐦
+        </p>`
+      );
+
       $("figure").append($longError);
-      $("figure").slideDown;
-      $("figure").attr("hidden", false);
+
+      $("figure").slideDown();
       return;
 
+    } else {
+      $("figure").slideUp();
+      $("figure").empty();
     }
+
+
 
     $.ajax({
       method: "POST",
       url: "/tweets",
       data: $data
     })
+      
       .then(function() {
-        $("#tweets-container").empty();
+        
         loadTweets();
-      });
 
+      });
   });
 
 
@@ -112,7 +135,4 @@ $(document).ready(function() {
 
   loadTweets();
 
-
 });
-
-
