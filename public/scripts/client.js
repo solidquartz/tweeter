@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
 
   $("figure").hide();
@@ -106,8 +107,6 @@ $(document).ready(function() {
       $("figure").empty();
     }
 
-
-
     $.ajax({
       method: "POST",
       url: "/tweets",
@@ -115,6 +114,7 @@ $(document).ready(function() {
     })
       
       .then(function() {
+        $('form').trigger("reset");
         loadTweets();
 
       });
