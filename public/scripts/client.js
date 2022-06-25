@@ -85,7 +85,7 @@ $(document).ready(function() {
       return;
 
     } else {
-      $("figure").slideUp();
+      $("figure").slideUp(300);
       $("figure").empty();
     }
 
@@ -103,19 +103,21 @@ $(document).ready(function() {
       return;
 
     } else {
-      $("figure").slideUp();
+      $("figure").slideUp(300);
       $("figure").empty();
     }
 
-    $.ajax({
-      method: "POST",
-      url: "/tweets",
-      data: $data
-    })
-      .then(function() {
-        $('form').trigger("reset");
-        loadTweets();
-      });
+    if ($("#tweet-text").val().length <= 140 && $("#tweet-text"))
+      $.ajax({
+        method: "POST",
+        url: "/tweets",
+        data: $data
+      })
+        .then(function() {
+          $('form').trigger("reset");
+          $(".counter").text("140");
+          loadTweets();
+        });
   });
 
 
