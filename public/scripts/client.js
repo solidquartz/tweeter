@@ -1,6 +1,7 @@
 
 $(document).ready(function() {
 
+  //hides error messages by default
   $("figure").hide();
 
   /////////////////////////////////////////////
@@ -98,7 +99,6 @@ $(document).ready(function() {
       );
 
       $("figure").append($longError);
-
       $("figure").slideDown();
       return;
 
@@ -112,11 +112,9 @@ $(document).ready(function() {
       url: "/tweets",
       data: $data
     })
-      
       .then(function() {
         $('form').trigger("reset");
         loadTweets();
-
       });
   });
 
@@ -131,7 +129,5 @@ $(document).ready(function() {
         renderTweets(data);
       });
   };
-
   loadTweets();
-
 });

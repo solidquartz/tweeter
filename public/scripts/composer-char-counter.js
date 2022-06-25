@@ -17,7 +17,6 @@ $(document).ready(function() {
     if ($charsRemaining > 0) {
       $($charCounter).removeClass("invalid");
     }
-
+    
   });
-
 });
