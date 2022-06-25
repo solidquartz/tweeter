@@ -1,8 +1,10 @@
 # Tweeter Project
 
-Tweeter is a simple, single-page Twitter clone.
+Tweeter is a simple, single-page Twitter clone. It is Aky Mac Donald's second project at Lighthouse Labs, and their first frontend-focused project.
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express back-end skills.
+Tweeter is built using HTML, CSS, JavaScript, jQuery, Node, Express, and uses Ajax. The database code (in /server) was pre-written by an instructor. The project employs Flexbox and 
+
+Feature highlights include a character counter, a fluid layout, dynamic error messages, and cute bouncing animations!
 
 ## Getting Started
 
@@ -23,3 +25,13 @@ This repository is the starter code for the project: Students will fork and clon
 - md5
 - timeago.js
 - nodemon (dev dependency)
+
+## Screenshots
+
+!["Screenshot of desktop view page."](https://github.com/solidquartz/tweeter/blob/master/docs/tweeter-home.png)
+
+!["Resizes based on screen size! Screenshot of mobile view."](https://github.com/solidquartz/tweeter/blob/master/docs/tweeter-mobile.png)
+
+!["Features error messages that dynamically slide in and out, as well as a responsive character counter."](https://github.com/solidquartz/tweeter/blob/master/docs/error-message.png)
+
+## Video
