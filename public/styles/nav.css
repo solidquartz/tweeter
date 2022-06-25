@@ -1,12 +1,12 @@
 h1 {
-  color: #FFFFFF;
+  color: white;
   font-size: 1.5em;
 }
 
 .write {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
-  color: #FFFFFF;
+  color: white;
   font-size: .8em;
 }
 
@@ -16,7 +16,7 @@ nav {
   top: 0;
   height: 120px;
   width: 100%;
-  background-color: #4056A1;
+  background-color: #93B5C6;
   justify-content: space-between;
   font-family: "Bungee", sans-serif;
   z-index: 1;
@@ -39,7 +39,7 @@ nav {
 }
 
 .nav-icon {
-  color: crimson;
+  color: #FFE3E3;
   font-size: .7em;
 }
 

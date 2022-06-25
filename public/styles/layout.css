@@ -19,7 +19,7 @@ html {
 
 body {
   color: #545149;
-  background-color: #f4f1ec;
+  background-color: #FFFFFF;
   font-size: 24px;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
@@ -30,11 +30,11 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- .body-container {
+.body-container {
   display: flex;
   flex-direction: column;
- }
- 
+}
+
 #tweets-container {
   display: flex;
   align-content: center;
@@ -46,20 +46,20 @@ body {
 }
 
 .tweet-section {
-    display: flex;
-      width: 90%;
-      align-content: center;
-      justify-content: baseline;
-      flex-direction: column;
-      margin: auto;
-      border: #545149 solid 5px;
-      padding: .5em;
-      margin-bottom: 1em;
-      margin-top: 1em;
-    }
+  display: flex;
+  width: 90%;
+  align-content: center;
+  justify-content: baseline;
+  flex-direction: column;
+  margin: auto;
+  border: #C9CCD5 solid 5px;
+  padding: .5em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
 
 .tweet-section:hover {
-  box-shadow: 5px 5px skyblue;
+  box-shadow: 5px 5px #FFE3E3;
 }
 
 .tweet-header {
@@ -82,7 +82,7 @@ body {
 .username {
   display: flex;
   align-items: center;
-  color: silver;
+  color: #E4D8DC;
   font-size: 1em;
 }
 
@@ -91,7 +91,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-content: baseline;
-  border-top: #545149 5px solid;
+  border-top: #C9CCD5 5px solid;
   margin-top: .7em;
   padding: .2em;
 }
@@ -99,20 +99,16 @@ footer {
 i {
   font-size: .7em;
   padding: .3em;
-  color: #4056A1;
+  color: #93B5C6;
   margin: auto;
 }
 
 i:hover {
-  color: goldenrod;
+  color: #FFE3E3;
 }
 
 .date-posted {
   font-size: .7em;
-}
-
-fa-triangle-exclamation {
-  color: red;
 }
 
 .warning {
@@ -120,15 +116,18 @@ fa-triangle-exclamation {
   font-size: .8em;
 }
 
-@media all and (min-width: 1024px){
-.body-container {
-  flex-direction: row;
-}
-.profile-header {
-  width: 33%;
-}
-.container {
-  width: 66%
-}
+@media all and (min-width: 1024px) {
+  .body-container {
+    flex-direction: row;
+  }
+
+  .profile-header {
+    width: 33%;
+    margin-left: 0;
+  }
+
+  .container {
+    width: 66%
+  }
 
 }

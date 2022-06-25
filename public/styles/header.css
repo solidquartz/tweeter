@@ -1,8 +1,8 @@
 .profile-header {
   display: flex;
   background-image:
-    url("/images/light-paper-fibers.png");
-  background-color: skyblue;
+    url("/images/clean-textile.png");
+  background-color: #FFE3E3;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -19,6 +19,7 @@ span {
 h2 {
   font-family: "Source Sans Pro" sans-serif;
   font-weight: 300;
+  color: slategray;
 }
 
 div {

@@ -17,8 +17,8 @@ form {
 
 textarea {
   border: none;
-  border-bottom: 5px solid #545149;
-  background-color: #f4f1ec;
+  border-bottom: 5px solid #C9CCD5;
+  background-color: #FFFFFF;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
   margin: 8px auto;
@@ -41,7 +41,7 @@ textarea {
 button {
   font-family: "Bungee", sans-serif;
   color: white;
-  background-color: #4056A1;
+  background-color: #93B5C6;
 }
 
 .invalid {
