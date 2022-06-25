@@ -41,4 +41,4 @@ Features error messages that dynamically slide in and out, as well as a responsi
 
 https://user-images.githubusercontent.com/13792069/175756823-d20fb680-5380-470e-9991-e6799d86c9cf.mov
 
-Check out the app in action, or view it on [Youtube]("https://youtu.be/DVBIcEbGeGU")
+Check out the app in action, or view it on [Youtube](https://youtu.be/DVBIcEbGeGU)
