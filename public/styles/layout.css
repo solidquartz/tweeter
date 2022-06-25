@@ -29,6 +29,12 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ .body-container {
+  display: flex;
+  flex-direction: column;
+ }
+ 
 #tweets-container {
   display: flex;
   align-content: center;
@@ -112,4 +118,17 @@ fa-triangle-exclamation {
 .warning {
   color: red;
   font-size: .8em;
+}
+
+@media all and (min-width: 1024px){
+.body-container {
+  flex-direction: row;
+}
+.profile-header {
+  width: 33%;
+}
+.container {
+  width: 66%
+}
+
 }
