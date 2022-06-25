@@ -1,8 +1,8 @@
 # Tweeter Project
 
-Tweeter is a simple, single-page Twitter clone. It is Aky Mac Donald's second project at Lighthouse Labs, and their first frontend-focused project.
+Tweeter is a simple, single-page Twitter clone. It is my second project at Lighthouse Labs, and my first frontend-focused project.
 
-Tweeter is built using HTML, CSS, JavaScript, jQuery, Node, Express, and uses Ajax. The database code (in /server) was pre-written by an instructor. The project employs Flexbox.
+Tweeter is built using HTML, CSS, JavaScript, jQuery, Node, and Express, and uses Ajax and Flexbox. The database code (in /server) was pre-written by an instructor.
 
 Feature highlights include a character counter, a fluid layout, dynamic error messages, and cute bouncing animations!
 
@@ -29,11 +29,16 @@ Feature highlights include a character counter, a fluid layout, dynamic error me
 ## Screenshots
 
 !["Screenshot of desktop view page."](https://github.com/solidquartz/tweeter/blob/master/docs/tweeter-home.png)
+Screenshot of desktop view page.
 
 !["Resizes based on screen size! Screenshot of mobile view."](https://github.com/solidquartz/tweeter/blob/master/docs/tweeter-mobile.png)
+Resizes based on screen size! Screenshot of mobile view.
 
 !["Features error messages that dynamically slide in and out, as well as a responsive character counter."](https://github.com/solidquartz/tweeter/blob/master/docs/error-message.png)
+Features error messages that dynamically slide in and out, as well as a responsive character counter.
 
 ## Video
 
-Check out the app in action on [Youtube](https://youtu.be/DVBIcEbGeGU)
+https://user-images.githubusercontent.com/13792069/175756823-d20fb680-5380-470e-9991-e6799d86c9cf.mov
+
+Check out the app in action, or view it on [Youtube](https://youtu.be/DVBIcEbGeGU)
