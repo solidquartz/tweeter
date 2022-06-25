@@ -29,9 +29,16 @@ Feature highlights include a character counter, a fluid layout, dynamic error me
 ## Screenshots
 
 !["Screenshot of desktop view page."](https://github.com/solidquartz/tweeter/blob/master/docs/tweeter-home.png)
+Screenshot of desktop view page.
 
 !["Resizes based on screen size! Screenshot of mobile view."](https://github.com/solidquartz/tweeter/blob/master/docs/tweeter-mobile.png)
+Resizes based on screen size! Screenshot of mobile view.
 
 !["Features error messages that dynamically slide in and out, as well as a responsive character counter."](https://github.com/solidquartz/tweeter/blob/master/docs/error-message.png)
+Features error messages that dynamically slide in and out, as well as a responsive character counter.
 
 ## Video
+
+https://user-images.githubusercontent.com/13792069/175756823-d20fb680-5380-470e-9991-e6799d86c9cf.mov
+
+Check out the app in action, or view it on [Youtube]("https://youtu.be/DVBIcEbGeGU")
