@@ -41,6 +41,18 @@ nav {
 .nav-icon {
   color: #FFE3E3;
   font-size: .7em;
+  animation: bounce 1.5s ease infinite forwards;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(-0.2rem);
+  }
+  50% {
+    transform: translateY(0.2rem);
+  }
+  100% {
+    transform: translateY(-0.2rem);
+  }
 }
 
 strong {

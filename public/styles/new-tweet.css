@@ -42,6 +42,20 @@ button {
   font-family: "Bungee", sans-serif;
   color: white;
   background-color: #93B5C6;
+  animation: bounce 1.5s ease infinite forwards;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(-0.2rem);
+  }
+
+  50% {
+    transform: translateY(0.2rem);
+  }
+
+  100% {
+    transform: translateY(-0.2rem);
+  }
 }
 
 .invalid {
