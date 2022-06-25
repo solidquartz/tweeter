@@ -2,7 +2,7 @@
 
 Tweeter is a simple, single-page Twitter clone. It is Aky Mac Donald's second project at Lighthouse Labs, and their first frontend-focused project.
 
-Tweeter is built using HTML, CSS, JavaScript, jQuery, Node, Express, and uses Ajax. The database code (in /server) was pre-written by an instructor. The project employs Flexbox and 
+Tweeter is built using HTML, CSS, JavaScript, jQuery, Node, Express, and uses Ajax and Flexbox. The database code (in /server) was pre-written by an instructor.
 
 Feature highlights include a character counter, a fluid layout, dynamic error messages, and cute bouncing animations!
 
