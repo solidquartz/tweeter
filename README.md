@@ -2,7 +2,7 @@
 
 Tweeter is a simple, single-page Twitter clone. It is my second project at Lighthouse Labs, and my first frontend-focused project.
 
-Tweeter is built using HTML, CSS, JavaScript, jQuery, Node, Express, and uses Ajax and Flexbox. The database code (in /server) was pre-written by an instructor.
+Tweeter is built using HTML, CSS, JavaScript, jQuery, Node, and Express, and uses Ajax and Flexbox. The database code (in /server) was pre-written by an instructor.
 
 Feature highlights include a character counter, a fluid layout, dynamic error messages, and cute bouncing animations!
 
