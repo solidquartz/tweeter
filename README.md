@@ -10,9 +10,9 @@ Feature highlights include a character counter, a fluid layout, dynamic error me
 
 1.Install all dependencies (using the npm install command).
 
-2. Run the development web server using `npm start` command.
+2.Run the development web server using `npm start` command.
 
-3. The app will be served at <http://localhost:8080/>
+3.The app will be served at <http://localhost:8080/>
 
 ## Dependencies
 
