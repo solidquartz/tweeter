@@ -8,12 +8,9 @@ Feature highlights include a character counter, a fluid layout, dynamic error me
 
 ## Getting Started
 
-1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.
-2. Clone your repository onto your local device.
-3. Install dependencies using the `npm install` command.
-3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>. This command will enable nodemon.
-4. Go to <http://localhost:8080/> in your browser.
-5. The server can also be started using `npm start`.
+1.Install all dependencies (using the npm install command).
+2. Run the development web server using `npm start` command.
+3. The app will be served at <http://localhost:8080/>
 
 ## Dependencies
 
